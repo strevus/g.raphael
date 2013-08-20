@@ -23,6 +23,9 @@
  **
  = (object) path element of the popup
  \*/
+
+define(["raphael"], function (Raphael) {
+
 Raphael.el.popup = function (dir, size, x, y) {
     var paper = this.paper || this[0].paper,
         bb, xy, center, cw, ch;
@@ -859,3 +862,6 @@ Raphael.g = {
         }
     }
 }
+
+  return Raphael;
+});

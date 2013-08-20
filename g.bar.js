@@ -4,7 +4,7 @@
  * Copyright (c) 2009-2012 Dmitry Baranovskiy (http://g.raphaeljs.com)
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
  */
-(function () {
+define(["g.raphael"], function (Raphael) {
     var mmin = Math.min,
         mmax = Math.max;
 
@@ -671,4 +671,4 @@
         return new HBarchart(this, x, y, width, height, values, opts);
     };
     
-})();
+});

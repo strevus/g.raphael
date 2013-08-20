@@ -41,7 +41,7 @@
  | r.piechart(cx, cy, r, values, opts)
  \*/
  
-(function () {
+define(["g.raphael"], function (Raphael) {
 
     function Piechart(paper, cx, cy, r, values, opts) {
         opts = opts || {};
@@ -293,4 +293,4 @@
         return new Piechart(this, cx, cy, r, values, opts);
     }
     
-})();
+});

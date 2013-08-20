@@ -5,7 +5,7 @@
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
  */
 
-(function () {
+define(["g.raphael"], function (Raphael) {
         var colorValue = function (value, total, s, b) {
             return 'hsb(' + [Math.min((1 - value / total) * .4, 1), s || .75, b || .75] + ')';
         };
@@ -255,4 +255,4 @@
     Raphael.fn.dotchart = function(x, y, width, height, valuesx, valuesy, size, opts) {
         return new Dotchart(this, x, y, width, height, valuesx, valuesy, size, opts);
     }
-})();
+});

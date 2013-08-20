@@ -5,7 +5,7 @@
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
  */
 
-(function () {
+define(["g.raphael"], function (Raphael) {
 
     function shrink(values, dim) {
         var k = values.length / dim,
@@ -486,4 +486,4 @@
         return new Linechart(this, x, y, width, height, valuesx, valuesy, opts);
     }
     
-})();
+});
